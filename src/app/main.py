@@ -16,3 +16,7 @@ async def request_logging_middleware(request: Request, call_next):
 @app.get("/ping")
 def read_root():
     return {"message": "Pong"}
+
+@app.get("/pingtest")
+def read_root():
+    return {"message": "Pongs"}
